@@ -1,6 +1,3 @@
-Install and launch redis.
-
-Install celery and toolz in your Python virtual environment.
 
 ```
 rq worker
