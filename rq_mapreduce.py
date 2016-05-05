@@ -22,10 +22,10 @@ def mapreduce(chunk_size):
     """ A long running task which splits up the input data to many workers """
     # create some sample data for our summation function
     data = []
-    for i in range(1000):
+    for i in range(10000):
         x = []
         for j in range(random.randrange(10) + 5):
-            x.append(random.randrange(1000))
+            x.append(random.randrange(10000))
         data.append(x)
 
     # break up our data into chunks and create a dynamic list of workers
