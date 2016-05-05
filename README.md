@@ -1,5 +1,5 @@
 
 ```
-rq worker
-python3 rq_mapreduce_demo.py
+./spawn_workers.sh
+python3 demo.py
 ```
