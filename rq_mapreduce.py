@@ -5,8 +5,6 @@ import time
 from toolz.itertoolz import partition_all, concat
 
 
-
-
 def _reduce(*mapped):
     """ Reduce worker """
     return list(concat(mapped))
@@ -49,4 +47,3 @@ def mapreduce(chunk_size):
         time.sleep(0.1)
 
     return reduce_job.result
-

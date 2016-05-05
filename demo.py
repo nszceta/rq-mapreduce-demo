@@ -6,6 +6,7 @@ import time
 
 q = Queue('two', connection=StrictRedis())
 
+
 def create_work(chunk_size):
     """ A fast task for initiating our map function """
     return q.enqueue_call(func=mapreduce, args=(chunk_size,)).id
@@ -24,4 +25,3 @@ if __name__ == '__main__':
     my_id = create_work(chunk_size=4)
     print(my_id)
     get_work(my_id)
-
